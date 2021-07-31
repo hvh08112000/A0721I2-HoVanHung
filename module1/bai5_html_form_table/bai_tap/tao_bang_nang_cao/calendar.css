@@ -1,0 +1,33 @@
+body{
+    padding: 50px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    border: 1px solid white;
+    font-size: 30px;
+    text-align: center;
+    padding: 3px;
+}
+th:nth-child(1){
+    background-color: red;
+}
+th:nth-last-child(1){
+    background-color: blue;
+}
+td{
+    font-weight:400;
+    font-size:20px;
+    padding:10px 10px 10px 10px;
+    border:1px solid black;
+    text-align: center;
+}
+td:nth-child(1){
+    color: red;
+}
+td:nth-last-child(1){
+    color: blue;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form đăng ký</title>
+    <style>
+        .rform{
+            width: 500px;
+            height: 400px;
+            background: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <form action="registration.html" method="get" class="rform">
+        <h2 style="background: bisque; color: blue">ĐĂNG KÝ HỌC VIÊN</h2>
+        <label>Họ và tên <input type="text" name="yourname" size="30"</label><br><br>
+        <label>Ngày sinh <input type="text" name="email" size="25"</label><br><br>
+        <label>Giới tính
+            <input type="radio" name="rd" value="Nam">Nam
+            <input type="radio" name="rd" value="Nữ">Nữ
+        </label><br><br>
+        <label>Địa chỉ <textarea cols="40" rows="4"></textarea></label><br><br>
+        <label>
+            Lớp
+            <select name="class">
+                <option>- Chọn lớp -</option>
+                <option>A0721I1</option>
+                <option>A0721I2</option>
+            </select>
+        </label><br><br>
+        <label>Email <input type="text" name="email" size="30"</label><br><br>
+        <label>Điện thoại <input type="text" name="email" size="30"</label><br><br>
+        <input type="submit" name="SubmitForm" value="Đăng ký">
+        <input type="submit" name="ResetForm" value="Nhập lại">
+    </form>
+</body>
+</html>
