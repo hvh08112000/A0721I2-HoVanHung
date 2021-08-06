@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculator</title>
+</head>
+<body>
+    <form>
+        <h2>Caculator</h2>
+        <input id="soA" type="text" name="a">
+        <input id="soB" type="text" name="b">
+        <br>
+        <br>
+        <input onclick="Cong()" type="button" name="addition" value="Addition(+)">
+        <input onclick="Tru()" type="button" name="subtraction" value="Subtraction(-)">
+        <input onclick="Nhan()" type="button" name="multiplication" value="Multiplication(*)">
+        <input onclick="Chia()" type="button" name="division" value="Division(/)">
+        <br>
+        <br>
+        <p id="result">Result</p>
+    </form>
+    <script>
+        let getA = document.getElementById("soA");
+        let getB = document.getElementById("soB");
+        let sumAB;
+        let subAB;
+        let mulAB;
+        let divAB;
+
+        function Cong() {
+            sumAB = parseFloat(getA.value) + parseFloat(getB.value) ;
+            document.getElementById("result").innerHTML = "Result Addition : " + sumAB;
+        }
+        function Tru() {
+            subAB = parseFloat(getA.value) - parseFloat(getB.value) ;
+            document.getElementById("result").innerHTML = "Result Subtraction : " + subAB;
+        }
+        function Nhan() {
+            mulAB = parseFloat(getA.value) * parseFloat(getB.value) ;
+            document.getElementById("result").innerHTML = "Result Multiplication : " + mulAB;
+        }
+        function Chia() {
+            divAB = parseFloat(getA.value) / parseFloat(getB.value) ;
+            document.getElementById("result").innerHTML = "Result Division : " + divAB;
+        }
+    </script>
+</body>
+</html>

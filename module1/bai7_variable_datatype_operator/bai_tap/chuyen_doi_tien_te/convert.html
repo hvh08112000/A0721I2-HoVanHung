@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+    <style>
+        td, th{
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <th>Amount</th>
+                <th>From Currency</th>
+                <th>To Currency</th>
+            </tr>
+            <tr>
+                <td><input id="currency" type="text" name="currency"></td>
+                <td>
+                    <select>
+                        <option value="VND">VietNam</option>
+                    </select>
+                </td>
+                <td>
+                    <select>
+                        <option value="USD">USD</option>
+                    </select>
+                </td>
+                <td><input onclick="Chuyen_Doi()" type="button" name="convert" style="background-color: blue; color: white" value="Convert"></td>
+            </tr>
+            <tr>
+                <td id="result" colspan="4" style="color: blue">Result</td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        function Chuyen_Doi() {
+            let curr = document.getElementById("currency");
+            let covert = parseInt(curr.value) / 23000;
+            document.getElementById("result").innerHTML = "Result : " + covert;
+        }
+    </script>
+</body>
+</html>
