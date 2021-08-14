@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra năm nhuận</title>
+</head>
+<body>
+    <script>
+        /*//C1
+        let year = parseInt(prompt("Nhập năm: "));
+        if (year % 4 == 0) {
+            if (year % 100 == 0) {
+                if (year % 400 == 0) {
+                    alert( year + ": Năm nhuận");
+                }
+                else {
+                    alert(year + ": Năm không nhuận");
+                }
+            }
+            else {
+                alert(year + ": Năm nhuận");
+            }
+        }
+        else {
+            alert(year + ": Năm không nhuận");
+        }
+        */
+
+        /*//C2
+        let year = parseInt(prompt("Nhập năm: "));
+        let isLeapYear = false;
+
+        if (year % 4 == 0) {
+            if (year % 100 == 0) {
+                if (year % 400 == 0) {
+                    isLeapYear = true;
+                }
+            } else {
+                isLeapYear = true;
+            }
+        }
+        if (isLeapYear) {
+            alert(year + ": Năm nhuận");
+        }
+        else {
+            alert(year + ": Năm không nhuận");
+        }
+        */
+
+        let year = parseInt(prompt("Nhập năm: "));
+        let isLeapYear = false;
+        let isDivísibleBy4 = year % 4 == 0;
+        if (isDivísibleBy4) {
+            let isDivísibleBy100 = year % 100 == 0;
+            if (isDivísibleBy100) {
+                let isDivísibleBy400 = year % 400 == 0;
+                if (isDivísibleBy400) {
+                    isLeapYear = true;
+                }
+            }
+            else {
+                    isLeapYear = true;
+            }
+        }
+        if (isLeapYear) {
+            alert(year + ": Năm nhuận");
+        }
+        else {
+            alert(year + ": Năm không nhuận");
+        }
+    </script>
+</body>
+</html>
