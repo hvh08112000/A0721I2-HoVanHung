@@ -46,19 +46,18 @@ function bai4() {
     let num1 = parseFloat(document.getElementById("num1").value);
     let num2 = parseFloat(document.getElementById("num2").value);
     let num3 = parseFloat(document.getElementById("num3").value);
-    let max = num1;
     if (isNaN(num1) == true || isNaN(num2) == true || isNaN(num3) == true) {
         document.getElementById("result4").innerHTML = "<b> Bạn hãy nhập lại kiểu số!!! </b>";
     }
     else {
-        if (max < num2) {
+        if (num < num2) {
             max = num2;
         }
         if (max < num3) {
             max = num3;
         }
+        document.getElementById("result4").innerHTML = "Kết quả: Số lớn nhất là: " + max;
     }
-    document.getElementById("result4").innerHTML = "Kết quả: Số lớn nhất là: " + max;
 }
 
 function bai5() {

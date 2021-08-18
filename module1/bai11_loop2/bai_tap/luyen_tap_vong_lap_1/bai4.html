@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function fibonacci(n) {
+            if (n < 2) {
+                return 1;
+            }
+            else {
+                return fibonacci(n - 1) + fibonacci(n - 2);
+            }
+        }
+
+        let n = 0;
+        while (fibonacci(n) % 5 != 0) {
+            n++;
+        }
+        alert("Số đầu tiên trong dãy fibonacci chia hết cho 5 là: " + fibonacci(n));
+    </script>
+</body>
+</html>

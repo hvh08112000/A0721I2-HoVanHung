@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị n số nguyên tố đầu tiên</title>
+</head>
+<body>
+    <script>
+        function ktsnt(x){
+            if (x < 2) {
+                return false;
+            }
+            else {
+                for (let i = 2; i <= Math.sqrt(x); i++) {
+                    if (x % i == 0) {
+                        return  false;
+                        break;
+                    }
+                }
+            }
+            return true;
+        }
+
+        let number = prompt("Enter quantity:");
+        let count = 0;
+        let n = 2;
+        document.write(number + " số nguyên tố đầu tiên:");
+        while (count < number) {
+            if (ktsnt(n)) {
+                document.write(n + "&nbsp&nbsp&nbsp&nbsp");
+                count++;
+            }
+            n++;
+        }
+    </script>
+</body>
+</html>

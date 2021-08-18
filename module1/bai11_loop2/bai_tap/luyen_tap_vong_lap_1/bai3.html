@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="rs"></p>
+    <script>
+        function fibonacci(n) {
+            if (n < 2) {
+                return 1;
+            }
+            else {
+                return fibonacci(n - 1) + fibonacci(n - 2);
+            }
+        }
+        let number = prompt("Nhập số lượng fibonacci:");
+        document.getElementById("rs").innerHTML = number + " số trong dãy fibonacci đầu tiên là: ";
+        for (let i = 0; i < number; i++) {
+            document.write(fibonacci(i) + ", ");
+        }
+    </script>
+</body>
+</html>

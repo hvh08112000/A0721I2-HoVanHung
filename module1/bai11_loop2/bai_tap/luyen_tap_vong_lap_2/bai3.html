@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tam giác vuông</title>
+</head>
+<body>
+    <p><b>Bài 3: </b>In tam giác vuông. Các góc vuông nằm ở các vị trí khác nhau</p>
+    <script>
+        let canh = 5;
+        for (let i = 1; i <= canh; i++) {
+            for (let j = 1; j <= i; j++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+        document.write("<br>");
+        for (let i = canh; i >= 1; i--) {
+            for (let j = 1; j <= i; j++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+        document.write("<br>");
+        for (let i = 1; i <= canh; i++) {
+            for (let j = 1; j <= (canh - i); j++) {
+                document.write("&nbsp&nbsp");
+            }
+            for (let k = 1; k <= i; k++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+        document.write("<br>");
+        for (let i = 1; i <= canh; i++) {
+            for (let j = 1; j < i; j++) {
+                document.write("&nbsp&nbsp");
+            }
+            for (let k = i; k <= canh; k++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>

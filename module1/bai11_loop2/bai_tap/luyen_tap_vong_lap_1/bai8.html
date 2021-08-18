@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game đoán số</title>
+</head>
+<body>
+    <input type="button" value="Chơi" onclick="play()">
+    <h2 id="rs" style="color: red"></h2>
+    <script>
+        function play() {
+            let random = Math.floor(Math.random() * 10);
+            let count = 0;
+            while (count < 3) {
+                let number = prompt("Nhập số dự đoán (từ 0 - 9):", "0");
+                if (isNaN(number) == true) {
+                    alert("Bạn phải nhập kiểu số");
+                }
+                else if (number == random) {
+                    document.getElementById("rs").innerHTML = "Chúc mừng bạn đã đoán đúng";
+                    break;
+                } else {
+                    if (number > random) {
+                    alert("Số bạn nhập lớn hơn. Bạn có thể lựa chọn lại!!!");
+                    }
+                    else {
+                        alert("Số bạn nhập nhỏ hơn. Bạn có thể lựa chọn lại!!!");
+                    }
+                    count++;
+                }
+                if (count == 3) {
+                    document.getElementById("rs").innerHTML = "Bạn đã đoán sai 3 lần <br> Bạn có thể chơi lại";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

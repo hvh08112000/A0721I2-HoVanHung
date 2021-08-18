@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function fibonacci(n) {
+        if (n < 2) {
+            return 1;
+        }
+        else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+    }
+
+    let tong = 0;
+    for (let i = 0; i < 20; i++) {
+        tong += fibonacci(i);
+    }
+    alert("Tổng của 20 số đầu tiên trong dãy fibonacci là: " + tong);
+</script>
+</body>
+</html>
