@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[* Bài tập] Luyện mảng 02</title>
+</head>
+<body>
+    <p><b>Bài 3:</b> Viết một chương trình khai báo một ký tự và kích thước của mảng. This chương trình đếm số ký tự trong mảng.</p>
+    <script>
+        let array = [];
+        let number = prompt("Nhập kích thước của mảng: ");
+
+        for (let i = 0; i < number; i++) {
+            array.push(prompt("Nhập phần tử thứ " + i));
+        }
+
+        let count = 0;
+        for (let i = 0; i < number; i++) {
+            if (!isNaN(array[i])) {
+                count += 1;
+            }
+        }
+        document.write("<b>Mảng có " + count + " ký tự số.</b>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Từ điển</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dictionary</h1>
+    <input id="word" type="text" size="20">
+    <input type="button" value="Translate" onclick="trans()">
+    <h3 id="rs" style="color: blue"></h3>
+    <script>
+        function trans() {
+            let word = document.getElementById("word").value;
+            let tienganh = ["dog","cat","apple","police","birthday","coffee"];
+            let tiengviet = ["con chó", "con mèo","quả táo","cảnh sát","ngày sinh nhật","cà phê"];
+            for (let i = 0; i < tienganh.length; i++) {
+                if (word == tienganh[i]) {
+                    document.getElementById("rs").innerHTML = "Nghĩa tiếng việt là: " + tiengviet[i];
+                    break;
+                }
+                else {
+                    document.getElementById("rs").innerHTML = "Không tìm thấy !!!";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

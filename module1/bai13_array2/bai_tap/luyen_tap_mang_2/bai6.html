@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[* Bài tập] Luyện mảng 02</title>
+</head>
+<body>
+<p><b>Bài 6:</b> Viết chương trình nhập vào một ký tự, tìm tất cả các ký tự trong mảng là (-) và thay thế các ký tự này bởi ký tự (_)</p>
+<script>
+    let str = prompt("Nhập vào chuỗi ký tự: ");
+    document.write("<b>Chuỗi ký tự vừa nhập: </b>" + str.toString() + "<br>");
+    let new_str = str.replace(/-/g,'_');
+    document.write("<b>Chuỗi ký tự sau khi thay thế (-): </b>" + new_str.toString());
+</script>
+</body>
+</html>
