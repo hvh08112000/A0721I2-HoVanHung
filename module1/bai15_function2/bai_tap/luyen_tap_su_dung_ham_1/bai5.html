@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập tạo và sử dụng hàm 01</title>
+</head>
+<body>
+    <script>
+        let star = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        let constellation = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+        let result;
+        function bai5(name) {
+            let index = star.indexOf(name);
+            return result = constellation[index];
+        }
+
+        let name = prompt("Nhập tên của ngôi sao:");
+        let rs = bai5(name);
+        alert("Tên chòm sao của ngôi sao " + name + " là: " + rs);
+    </script>
+</body>
+</html>
