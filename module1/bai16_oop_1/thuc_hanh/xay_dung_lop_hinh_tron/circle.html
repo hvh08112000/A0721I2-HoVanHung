@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Xây dựng lớp Hình Tròn</title>
+</head>
+<body>
+    <script>
+        // let Circle = function(radius) {
+        //     this.radius = radius;
+        //
+        //     this.getRadius = function() {
+        //         return radius;
+        //     }
+        //     this.getArea = function() {
+        //         return Math.PI * radius * radius;
+        //     }
+        // };
+        //
+        // let circle = new Circle(5);
+        //
+        // let radius = circle.getRadius();
+        //
+        // let area = circle.getArea();
+        //
+        // alert("radius: " + radius + "; area: " + area);
+
+        class Circle {
+            constructor(radius) {
+                this.radius = radius;
+            }
+            area() {
+                alert("Bán kính của hình tròn là: " + this.radius + "\n" + "Diện tích của hình tròn là: " + (Math.PI * this.radius * this.radius));
+            }
+        }
+
+        let circle = new Circle(5);
+        circle.area();
+    </script>
+</body>
+</html>

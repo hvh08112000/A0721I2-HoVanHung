@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Xây dựng lớp mô tả hình chữ nhật</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="1400px" height="700px" style="border:1px solid #d3d3d3;"></canvas>
+    <script>
+        class Rectangle {
+            constructor(chieuDai, chieuRong) {
+                this.chieuDai = chieuDai;
+                this.chieuRong = chieuRong;
+            }
+            perimeter() {
+                let perimeter = (this.chieuDai + this.chieuRong) * 2;
+                return perimeter;
+            }
+            area() {
+                let area = this.chieuRong * this.chieuDai;
+                return area;
+            }
+        }
+        
+    </script>
+</body>
+</html>

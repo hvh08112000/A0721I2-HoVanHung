@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Xây dựng lớp Date</title>
+</head>
+<body>
+    <script>
+        class Date{
+            constructor(day, month, year) {
+                this.day = day;
+                this.month = month;
+                this.year = year;
+            }
+        }
+
+        let date1 = new Date(3, 9, 2021);
+        let date2 = new Date(4, 9, 2021);
+        alert("Hôm nay " + "\n" + " ngày: " + date1.day + " tháng: " + date1.month + " năm: " + date1.year);
+        alert("Ngày mai " + "\n" + " ngày: " + date2.day + " tháng: " + date2.month + " năm: " + date2.year);
+
+        // let MyDate = function(day, month, year) {
+        //
+        //     this.day = day;
+        //
+        //     this.month = month;
+        //
+        //     this.year = year;
+        //
+        //     this.getDay = function() {
+        //         return this.day;
+        //     }
+        //     this.getMonth = function() {
+        //         return this.month;
+        //     }
+        //     this.getYear = function() {
+        //         return this.year;
+        //     }
+        //     this.setDay = function(day) {
+        //         this.day  = day;
+        //     }
+        //     this.setMonth = function(month) {
+        //         this.month  = month;
+        //     }
+        //     this.setYear = function(year) {
+        //         this.year  = year;
+        //     }
+        // };
+        //
+        // let date = new MyDate(2, 9, 2021);
+        //
+        // let day = date.getDay();
+        //
+        // let month = date.getMonth();
+        //
+        // let year = date.getYear();
+        //
+        // alert(day + "/" + month + "/" + year);
+        //
+        // date.setDay(3);
+        // date.setMonth(9);
+        // date.setYear(2021);
+        //
+        // alert(day + "/" + month + "/" + year);
+    </script>
+</body>
+</html>
