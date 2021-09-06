@@ -5,7 +5,7 @@
     <title>[Bài tập] Xây dựng lớp mô tả hình chữ nhật</title>
 </head>
 <body>
-    <canvas id="myCanvas" width="1400px" height="700px" style="border:1px solid #d3d3d3;"></canvas>
+    <canvas id="myCanvas" width="1000px" height="500px" style="border:1px solid #d3d3d3;"></canvas>
     <script>
         class Rectangle {
             constructor(chieuDai, chieuRong) {
@@ -13,15 +13,24 @@
                 this.chieuRong = chieuRong;
             }
             perimeter() {
-                let perimeter = (this.chieuDai + this.chieuRong) * 2;
-                return perimeter;
+                return (this.chieuDai + this.chieuRong) * 2;
             }
             area() {
-                let area = this.chieuRong * this.chieuDai;
-                return area;
+                return this.chieuRong * this.chieuDai;
             }
         }
-        
+
+        let rectangle = new Rectangle(prompt("Nhập chiều dài hình chữ nhật:"),prompt("Nhập chiều rộng hình chữ nhật:"));
+        alert("Chu vi hình chữ nhật: " + rectangle.perimeter() + "\n" + "Diện tích hình chữ nhật: " + rectangle.area());
+
+        function createRectangle() {
+            let canvas = document.getElementById("myCanvas");
+            let ctx = canvas.getContext("2d");
+            ctx.fillStyle = "red";
+            ctx.fillRect(300, 200, rectangle.chieuDai, rectangle.chieuRong);
+        }
+
+        createRectangle();
     </script>
 </body>
 </html>

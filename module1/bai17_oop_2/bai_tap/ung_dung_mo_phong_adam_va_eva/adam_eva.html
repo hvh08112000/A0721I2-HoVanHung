@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Phát triển ứng dụng nhỏ mô phỏng câu chuyện Adam và Eva</title>
+</head>
+<body>
+    <h3 id="weightApple">Khối lượng quả táo</h3>
+    <h3 id="weightHuman">Khối lượng người</h3>
+    <button onclick="eatApple()">Ăn táo</button>
+    <script>
+        class Apple {
+            constructor(weightApple) {
+                this.weightApple = weightApple;
+            }
+            decrease() {
+                this.weightApple--;
+            }
+            isEmpty() {
+                if (this.weightApple === 0) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+            getWeightApple() {
+                return this.weightApple;
+            }
+        }
+
+        class Human {
+            constructor(name, gender, weightHuman) {
+                this.name = name;
+                this.gender = gender;
+                this.weightHuman = weightHuman;
+            }
+            getWeight() {
+                return this.weightHuman;
+            }
+            eat(apple) {
+                if (!apple.isEmpty()) {
+                    this.weightHuman += 1;
+                    apple.decrease();
+                    document.getElementById("weightApple").innerHTML = "Khối lượng quả táo còn: " + apple.getWeightApple() + " đv";
+                    document.getElementById("weightHuman").innerHTML = "Khối lượng của " + this.name + " là: " + this.getWeight();
+                }
+                else {
+                    alert(this.name + " Đã ăn hết trái táo");
+                }
+            }
+        }
+
+        let apple = new Apple(10);
+        let human = new Human("Adam","male",50);
+        function eatApple() {
+            human.eat(apple);
+        }
+    </script>
+</body>
+</html>
