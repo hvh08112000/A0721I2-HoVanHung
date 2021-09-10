@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String</title>
+</head>
+<body>
+    <script>
+        function titleCase(str) {
+            return str.toLowerCase().replace(/(^|\s)\S/g, function(l) {
+                return l.toUpperCase();
+            });
+        }
+        function longestWord(str) {
+            let convertArray = str.split(' ');
+            let longest = 0;
+            let word = null;
+            for (let i = 0; i < convertArray.length; i++) {
+                if (longest < convertArray[i].length) {
+                    longest = convertArray[i].length;
+                    word = convertArray[i];
+                }
+            }
+            return word;
+        }
+        let str = prompt("Nhập chuỗi ký tự bất kỳ:");
+        let result1 = titleCase(str);
+        let result2 = longestWord(result1);
+        console.log(result1);
+        console.log(result2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng và vòng lặp</title>
+</head>
+<body>
+    <script>
+        let s = "";
+        let str = prompt("Nhập số bất kỳ:");
+        while (isNaN(str)) {
+            str = prompt("Nhập lại kiểu số:");
+        }
+        let arr = str.split("");
+        for (let i = 0; i < arr.length; i++) {
+            switch (arr[i]) {
+                case '0':
+                    s += "không ";
+                    break;
+                case '1':
+                    s += "một ";
+                    break;
+                case '2':
+                    s += "hai ";
+                    break;
+                case '3':
+                    s += "ba ";
+                    break;
+                case '4':
+                    s += "bốn ";
+                    break;
+                case '5':
+                    s += "năm ";
+                    break;
+                case '6':
+                    s += "sáu ";
+                    break;
+                case '7':
+                    s += "bảy ";
+                    break;
+                case '8':
+                    s += "tám ";
+                    break;
+                case '9':
+                    s += "chín ";
+                    break;
+            }
+        }
+        console.log(str + " đọc thành chữ là: " + s);
+    </script
+</body>
+</html>

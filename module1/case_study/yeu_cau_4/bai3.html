@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String</title>
+</head>
+<body>
+    <script>
+        let s1 = "aabcc";
+        let s2 = "adcaa";
+
+        function commonCharacterCount(s1, s2) {
+            let count = 0;
+            for (let i = 0; i < s1.length; i++) {//i = 3
+                if (s1.indexOf(s1.charAt(i)) === i) {//c
+                    count += Math.min(countChar(s1, s1.charAt(i)), countChar(s2, s1.charAt(i)));//min //2  //1
+                    //count = 3
+                }
+            }
+            return count;
+        }
+
+        function countChar(string, kytu) {
+            let count = 0;
+            for (let i = 0; i < string.length; i++) {
+                if (string.charAt(i) === kytu) {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        console.log("So ky tu chung cua s1 va s2 la: " + commonCharacterCount(s1, s2));
+    </script>
+</body>
+</html>

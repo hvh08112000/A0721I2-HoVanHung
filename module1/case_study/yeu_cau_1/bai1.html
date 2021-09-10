@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vẽ hình</title>
+</head>
+<body>
+    <p><b>Bài 1:</b> Vẽ hình chữ nhật rỗng chiều dài n và chiều rộng m theo hình dưới đây.</p>
+    <script>
+        let chieu_Dai = prompt("Nhập chiều dài của hình chữ nhật:");
+        let chieu_Rong = prompt("Nhập chiều rộng của hình chữ nhật:");
+        for (let i = 0; i < chieu_Dai; i++) {
+            for (let j = 0; j < chieu_Rong; j++) {
+                if (i === 0 || i === chieu_Dai - 1 || j === 0 || j === chieu_Rong -1) {
+                    document.write("*");
+                }
+                else {
+                    document.write("&nbsp;&nbsp;");
+                }
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>

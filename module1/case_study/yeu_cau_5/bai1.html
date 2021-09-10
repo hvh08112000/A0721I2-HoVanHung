@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng 2 chiều</title>
+</head>
+<body>
+    <script>
+        let m = parseInt(prompt("Nhập m:"));
+        let n = parseInt(prompt("Nhập n:"));
+        let number;
+        let arr = new Array(m);
+        for (let i = 0; i < m; i++) {
+            arr[i] = new Array(n);
+            for (let j = 0; j < arr[i].length; j++) {
+                number = parseInt(prompt("Nhập phần tử thứ [" + i + "][" + j + "]:"));
+            }
+        }
+
+        console.log(arr);
+    </script>
+</body>
+</html>

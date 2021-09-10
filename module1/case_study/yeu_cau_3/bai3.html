@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng và vòng lặp</title>
+</head>
+<body>
+    <script>
+        let index = 0;
+        let numberators = [5,2,5,10];
+        let denominators = [6,3,4,2];
+        let maxfraction = numberators[0]/denominators[0];
+        for (let i = 1; i < numberators.length; i++) {
+            if (maxfraction < (numberators[i]/denominators[i])) {
+                index = i;
+            }
+        }
+        console.log(numberators[index] + "/" + denominators[index] + " là phân số lớn nhất, có chỉ số là " + index);
+    </script>
+</body>
+</html>

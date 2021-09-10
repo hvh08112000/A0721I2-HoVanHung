@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng và vòng lặp</title>
+</head>
+<body>
+    <h2>Menu</h2>
+    <p><b>1</b> (Cafe)</p>
+    <p><b>2</b> (Cam vắt)</p>
+    <p><b>3</b> (Nước ép cà rốt)</p>
+    <p><b>4</b> (Nước ép cà chua)</p>
+    <p><b>5</b> (Nước lọc)</p>
+    <p><b>6</b> (Nước dừa)</p>
+    <p><b>7</b> Thoát!</p>
+    <button onclick="chon()">Chọn đồ uống</button>
+    <script>
+        function chon() {
+            let sl;
+            let tong = 0;
+            let n;
+            do {
+                n = parseInt(prompt("Mời bạn chọn thức uống:"));
+                switch (n) {
+                    case 1:
+                        alert("Bạn đã chọn cafe - giá 15.000đ");
+                        sl = parseInt(prompt("Nhập số lượng: "));
+                        tong += (sl * 15000);
+                        break;
+                    case 2:
+                        alert("Bạn đã chọn cam vắt - giá 20.000đ");
+                        sl = parseInt(prompt("Nhập số lượng: "));
+                        tong += (sl * 20000);
+                        break;
+                    case 3:
+                        alert("Bạn đã chọn nước ép cà rốt - giá 20.000đ");
+                        sl = parseInt(prompt("Nhập số lượng: "));
+                        tong += (sl * 20000);
+                        break;
+                    case 4:
+                        alert("Bạn đã chọn nước ép cà chua - giá 20.000đ");
+                        sl = parseInt(prompt("Nhập số lượng: "));
+                        tong += (sl * 20000);
+                        break;
+                    case 5:
+                        alert("Bạn đã chọn nước lọc - giá 10.000đ");
+                        sl = parseInt(prompt("Nhập số lượng: "));
+                        tong += (sl * 10000);
+                        break;
+                    case 6:
+                        alert("Bạn đã chọn dừa - giá 15.000đ");
+                        sl = parseInt(prompt("Nhập số lượng: "));
+                        tong += (sl * 15000);
+                        break;
+                    case 7:
+                        alert("Cảm ơn bạn đã gọi món!");
+                        break;
+                    default:
+                        alert("Vui lòng chọn chọn số từ 1 - 7");
+                }
+            } while (n !== 7);
+            alert("Tổng tiền là: " + tong + "đ");
+        }
+    </script>
+</body>
+</html>

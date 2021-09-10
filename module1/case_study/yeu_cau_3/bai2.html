@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng và vòng lặp</title>
+</head>
+<body>
+    <script>
+        let a = [1,2,3,4,5,7,3];
+        let b = [1,2,7,8,6,2,6,4,9,8];
+        let missingValue = [];
+        for (let i = 0; i < b.length; i++) {
+            for (let j = 0; j < a.length; j++) {
+                if (b[i] === a[j]){
+                    b[i] = 1;
+                }
+            }
+            if (b[i] !== 1) {
+                missingValue.push(b[i]);
+            }
+        }
+        let arrSet = [...new Set(missingValue)];
+        arrSet.sort(function (a,b) {
+            return a - b;
+        })
+        console.log(b);
+        console.log(arrSet);
+    </script>
+</body>
+</html>
