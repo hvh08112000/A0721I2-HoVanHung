@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng 2 chiều</title>
+</head>
+<body>
+    <script>
+        function max(array) {
+            let max = array[0][0];
+            for (let i = 0; i < array.length; i++) {
+                for (let j = 0; j < array[i].length; j++) {
+                    if (max < array[i][j]) {
+                        max = array[i][j];
+                    }
+                }
+            }
+            return max;
+        }
+        function min(array) {
+            let min = array[0][0];
+            for (let i = 0; i < array.length; i++) {
+                for (let j = 0; j < array[i].length; j++) {
+                    if (min > array[i][j]) {
+                        min = array[i][j];
+                    }
+                }
+            }
+            return min;
+        }
+        let arr = [
+            [1,2,3,4,0],
+            [6,50,8,9,10],
+            [11,12,13,14,15],
+        ];
+        console.log("Giá trị lớn nhất trong mảng là: " + max(arr));
+        console.log("Giá trị nhỏ nhất trong mảng là: " + min(arr));
+    </script>
+</body>
+</html>

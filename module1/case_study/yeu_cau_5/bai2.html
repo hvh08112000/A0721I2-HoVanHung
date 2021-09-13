@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng 2 chiều</title>
+</head>
+<body>
+    <script>
+        function checkPrimeNumber(n) {
+            if (n < 2) {
+                return false;
+            }
+            else {
+                for (let i = 2; i <= Math.sqrt(n); i++) {
+                    if (n % i == 0) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+        }
+
+        let arr = [
+            [1,2,3,4,5],
+            [6,7,8,9,10],
+            [11,12,13,14,15],
+        ];
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (checkPrimeNumber(arr[i][j])) {
+                    console.log("Số nguyên tố: " + arr[i][j]);
+                    count++;
+                }
+            }
+        }
+        console.log("Có " + count + " số nguyên tố có trong mảng.");
+    </script>
+</body>
+</html>
