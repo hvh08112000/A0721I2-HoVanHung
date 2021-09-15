@@ -1,0 +1,52 @@
+.container {
+    width: 100%;
+}
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: #272882;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+.title {
+    float: right;
+    margin-right: 35%;
+    color: white;
+}
+.middle {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+.left {
+    width: 20%;
+    height: 20px;
+    display: grid;
+    justify-content: center;
+    border: #272882;
+}
+.left .bt{
+    width: 100%;
+    margin-right: 50px;
+    margin-top: 60px;
+}
+.right {
+    width: 80%;
+    height: 600px;
+    /*float: right;*/
+}
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: #272882;
+}
+#name {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
