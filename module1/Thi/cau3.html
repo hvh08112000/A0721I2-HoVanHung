@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý sách</title>
+</head>
+<body>
+<div class="top">
+    <h1>Quản lí sách</h1>
+</div>
+<div class="middle">
+    <p id="result"></p>
+</div>
+<div class="bottom">
+    <button onclick="themSachDaCo()">Thêm sách đã có</button>
+    <button onclick="addNewBook()">Thêm sách mới</button>
+    <button onclick="muonSach()">Mượn sách</button>
+    <button onclick="hienThiSachNhieuNhat()">Hiển thị sách nhiều nhất</button>
+</div>
+<script>
+    class Sach {
+        constructor(id,name,year,quantity,status) {
+            this.id = id;
+            this.name = name;
+            this.year = year;
+            this.quantity = quantity;
+            this.status = status;
+        }
+        setId(id) {
+            this.id = id;
+        }
+        getId() {
+            return this.id;
+        }
+        setName(name) {
+            this.name = name;
+        }
+        getName() {
+            return this.name;
+        }
+        setYear(year) {
+            this.year = year;
+        }
+        getYear() {
+            return this.year;
+        }
+        setQuantity(quantity) {
+            this.quantity = quantity;
+        }
+        getQuantity() {
+            return this.quantity;
+        }
+        setStatus(status) {
+            this.status = status;
+        }
+        getStatus() {
+            return this.status;
+        }
+    }
+
+    let bookList = [];
+    function addNewBook() {
+        let id = prompt("Nhập mã sách");
+        let name = prompt("Nhập tên sách").toString();
+        let year = parseInt(prompt("Nhập năm xuất bản:"));
+        let quantity = parseInt(prompt("Nhập số quyển"));
+        let status = prompt("Nhập tình trạng");
+        let newBook = new Sach(id,name,year,quantity,status);
+        bookList.push(newBook);
+        alert("Thêm thành công!!!");
+        display();
+    }
+    function display() {
+        let tableString = '<table border="1">\n' +
+            '    <tr>\n' +
+            '        <th>Mã số sách</th>\n' +
+            '        <th>Tên sách</th>\n' +
+            '        <th>Năm xuất bản</th>\n' +
+            '        <th>Số quyển</th>\n' +
+            '        <th>Tình trạng</th>\n' +
+            '    </tr>';
+        for (let i = 0; i < bookList.length; i++) {
+            tableString += ' <tr>\n' +
+                '        <td>' + bookList[i].getId() + '</td>\n' +
+                '        <td>' + bookList[i].getName() + '</td>\n' +
+                '        <td>' + bookList[i].getYear() + '</td>\n' +
+                '        <td>' + bookList[i].getQuantity() + '</td>\n' +
+                '        <td>' + bookList[i].getStatus() + '</td>\n' +
+                '    </tr>'
+        }
+        tableString += '</table>'
+        document.getElementById("result").innerHTML = tableString;
+    }
+    // function themSachDaCo() {
+    //
+    // }
+</script>
+</body>
+</html>

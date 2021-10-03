@@ -5,8 +5,14 @@
     <title>OOP</title>
 </head>
 <body>
-    <h2>Xổ số CodeGym</h2>
-    <button>Mua vé</button>
-    <button>Xem kết quả</button>
+    <script>
+       function f1(a) {
+           if(a==2)
+               return 2
+           return (a+1) *f1(a-1);
+
+       }
+       document.write(f1(3))
+    </script>
 </body>
 </html>
