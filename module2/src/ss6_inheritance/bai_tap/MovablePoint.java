@@ -56,4 +56,10 @@ public class MovablePoint extends Point{
                 ')' +
                 '}';
     }
+
+    public MovablePoint move() {
+        this.setX(this.getX() + this.xSpeed);
+        this.setY(this.getY() + this.ySpeed);
+        return this;
+    }
 }
