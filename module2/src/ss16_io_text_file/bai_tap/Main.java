@@ -11,8 +11,7 @@ public class Main {
         BufferedReader br = null;
         try {
             String line;
-            br = new BufferedReader(new FileReader("countries.csv"));
-
+            br = new BufferedReader(new FileReader("src\\ss16_io_text_file\\countries.csv"));
             while ((line = br.readLine()) != null) {
                 printCountry(parseCsvLine(line));
             }
@@ -40,11 +39,10 @@ public class Main {
     }
 
     private static void printCountry(List<String> country) {
-        System.out.println(
-                "Country [id= "
+        System.out.println("Country [id = "
                         + country.get(0)
-                        + ", code= " + country.get(1)
-                        + " , name=" + country.get(2)
+                        + ", code = " + country.get(1)
+                        + " , name =" + country.get(2)
                         + "]");
     }
 }
