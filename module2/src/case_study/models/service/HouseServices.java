@@ -1,5 +1,6 @@
 package case_study.models.service;
 
+import case_study.commons.ValidateServices;
 import case_study.models.House;
 import case_study.util.ReadAndWriteFileHouse;
 
@@ -13,24 +14,48 @@ public class HouseServices implements IServices{
 
     @Override
     public void addNew() {
-        System.out.print("Nhập id service: ");
-        String idService = scanner.nextLine();
-        System.out.print("Nhập tên service: ");
-        String nameService = scanner.nextLine();
-        System.out.print("Nhập diện tích sử dụng: ");
-        Double usableArea = Double.parseDouble(scanner.nextLine());
-        System.out.print("Nhập chi phí thuê: ");
-        Double rentalCosts = Double.parseDouble(scanner.nextLine());
-        System.out.print("Nhập số lượng người tối đa: ");
-        int quantity = Integer.parseInt(scanner.nextLine());
-        System.out.print("Nhập kiểu thuê: ");
-        String rentalType = scanner.nextLine();
-        System.out.print("Tiêu chuẩn phòng: ");
-        String roomStandard = scanner.nextLine();
+        String idService = "";
+        String nameService = "";
+        String rentalType = "";
+        String roomStandard = "";
+        Double usableArea, rentalCosts;
+        int quantity, floor;
+
+        do {
+            System.out.print("Nhập id service: ");
+            idService = scanner.nextLine();
+        } while (!ValidateServices.validateIdServiceHouse(idService));
+        do {
+            System.out.print("Nhập tên service: ");
+            nameService = scanner.nextLine();
+        } while (!ValidateServices.validateNameService(nameService));
+        do {
+            System.out.print("Nhập diện tích sử dụng: ");
+            usableArea = Double.parseDouble(scanner.nextLine());
+        } while (usableArea < 30);
+        do {
+            System.out.print("Nhập chi phí thuê: ");
+            rentalCosts = Double.parseDouble(scanner.nextLine());
+        } while (rentalCosts < 0);
+        do {
+            System.out.print("Nhập số lượng người tối đa: ");
+            quantity = Integer.parseInt(scanner.nextLine());
+        } while (quantity < 0 || quantity > 20);
+        do {
+            System.out.print("Nhập kiểu thuê: ");
+            rentalType = scanner.nextLine();
+        } while (ValidateServices.validateNameService(rentalType));
+        do {
+            System.out.print("Tiêu chuẩn phòng: ");
+            roomStandard = scanner.nextLine();
+        } while (ValidateServices.validateNameService(roomStandard));
         System.out.print("Mô tả tiện nghi khác: ");
         String description = scanner.nextLine();
-        System.out.print("Nhập số tầng: ");
-        int floor = Integer.parseInt(scanner.nextLine());
+        do {
+            System.out.print("Nhập số tầng: ");
+            floor = Integer.parseInt(scanner.nextLine());
+        } while (floor < 0);
+
         House house = new House(idService, nameService, usableArea, rentalCosts, quantity, rentalType, roomStandard, description, floor);
         houseList.add(house);
         ReadAndWriteFileHouse.writeFileHouse(houseList, true);

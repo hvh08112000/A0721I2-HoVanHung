@@ -1,5 +1,6 @@
 package case_study.controllers;
 
+import case_study.models.service.CustomerServices;
 import case_study.models.service.HouseServices;
 import case_study.models.service.RoomServices;
 import case_study.models.service.VillaServices;
@@ -17,6 +18,7 @@ public class MainController {
 
     //Hiển thị menu
     public void displayMainMenu() {
+        CustomerServices customerServices = new CustomerServices();
         int choice = 0;
         do {
             System.out.println("==========> MAIN MENU <==========" +
@@ -37,10 +39,10 @@ public class MainController {
                     showService();
                     break;
                 case 3:
-                    System.out.println("3. Add New Customer");
+                    customerServices.addNew();
                     break;
                 case 4:
-                    System.out.println("4. Show Information of Customer");
+                    customerServices.show();
                     break;
                 case 5:
                     System.out.println("5. Add New Booking");
@@ -144,4 +146,5 @@ public class MainController {
             }
         } while (flag);
     }
+
 }

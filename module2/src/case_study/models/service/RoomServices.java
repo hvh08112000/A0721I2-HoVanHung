@@ -1,5 +1,6 @@
 package case_study.models.service;
 
+import case_study.commons.ValidateServices;
 import case_study.models.Room;
 import case_study.util.ReadAndWriteFileRoom;
 
@@ -13,20 +14,39 @@ public class RoomServices implements IServices {
 
     @Override
     public void addNew() {
-        System.out.print("Nhập id service: ");
-        String idService = scanner.nextLine();
-        System.out.print("Nhập tên service: ");
-        String nameService = scanner.nextLine();
-        System.out.print("Nhập diện tích sử dụng: ");
-        Double usableArea = Double.parseDouble(scanner.nextLine());
-        System.out.print("Nhập chi phí thuê: ");
-        Double rentalCosts = Double.parseDouble(scanner.nextLine());
-        System.out.print("Nhập số lượng người tối đa: ");
-        int quantity = Integer.parseInt(scanner.nextLine());
-        System.out.print("Nhập kiểu thuê: ");
-        String rentalType = scanner.nextLine();
+        String idService = "";
+        String nameService = "";
+        String rentalType = "";
+        Double usableArea, rentalCosts;
+        int quantity;
+
+        do {
+            System.out.print("Nhập id service: ");
+            idService = scanner.nextLine();
+        } while (!ValidateServices.validateIdServiceRoom(idService));
+        do {
+            System.out.print("Nhập tên service: ");
+            nameService = scanner.nextLine();
+        } while (!ValidateServices.validateNameService(nameService));
+        do {
+            System.out.print("Nhập diện tích sử dụng: ");
+            usableArea = Double.parseDouble(scanner.nextLine());
+        } while (usableArea < 30);
+        do {
+            System.out.print("Nhập chi phí thuê: ");
+            rentalCosts = Double.parseDouble(scanner.nextLine());
+        } while (rentalCosts < 0);
+        do {
+            System.out.print("Nhập số lượng người tối đa: ");
+            quantity = Integer.parseInt(scanner.nextLine());
+        } while (quantity < 0 || quantity > 20);
+        do {
+            System.out.print("Nhập kiểu thuê: ");
+            rentalType = scanner.nextLine();
+        } while (ValidateServices.validateNameService(rentalType));
         System.out.print("Nhập dịch vụ miễm phí đi kèm: ");
         String freeServiceIncluded = scanner.nextLine();
+
         Room room = new Room(idService, nameService, usableArea, rentalCosts, quantity, rentalType, freeServiceIncluded);
         roomList.add(room);
         ReadAndWriteFileRoom.writeFileRoom(roomList,true);

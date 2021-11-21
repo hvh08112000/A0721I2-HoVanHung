@@ -33,4 +33,21 @@ public class Customer extends Person{
     public void setAddress(String address) {
         this.address = address;
     }
+
+    public String showInfo() {
+        return "==========> Customer <==========" + "\n" +
+                "Họ và tên: " + getName() + "\n" +
+                "Ngày sinh: " + getDateOfBirth() + "\n" +
+                "Giới tính: " + getGender() + "\n" +
+                "Số CMND: " + getIdentityCardNumber() + "\n" +
+                "Số ĐT: " + getPhoneNumber() + "\n" +
+                "Email: " + getEmail() + "\n" +
+                "Loại khách: " + typeOfGuest + "\n" +
+                "Địa chỉ: " + address;
+    }
+
+    public String getInfoToCSV() {
+        return getName() + "," + getDateOfBirth() + "," + getGender() + "," + getIdentityCardNumber() + "," +
+                getPhoneNumber() + "," + getEmail() + "," + typeOfGuest + "," + address;
+    }
 }
