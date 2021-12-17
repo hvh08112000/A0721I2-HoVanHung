@@ -5,7 +5,7 @@ use demo_view_index_stored_procedure;
 
 -- Bước 2: Tạo bảng Products với các trường dữ liệu
 create table products (
-	id int primary key auto_increment,
+	product_id int primary key auto_increment,
     product_code varchar(10),
 	product_name varchar(45),
 	product_price double,
@@ -74,14 +74,21 @@ call sp_add_products("p09", "Loa", 10, 3, null, "còn hàng");
 select * from products;
 -- Tạo store procedure sửa thông tin sản phẩm theo id
 DELIMITER //
-create procedure sp_update_products (inout id int, in code varchar(10), in name varchar(45), in price double, in amount int, in description varchar(100), in status varchar(45))
+create procedure sp_update_products (in id int, in code varchar(10), in name varchar(45), in price double, in amount int, in description varchar(100), in status varchar(45))
 begin
 update products set product_code = code, product_name = name, product_price = price, product_amount = amount, product_description = description, product_status = status
 where product_id = id;
 end //
 DELIMITER ;
 
-set @id = 6;
-call sp_update_products(@id, "p06", "Điện thoại", 10, 0, null, "hết hàng");
-select @id;
+call sp_update_products(6, 'p12', 'Điện thoại', 10, 0, null, 'hết hàng');
+
 -- Tạo store procedure xoá sản phẩm theo id
+DELIMITER //
+create procedure sp_delete_products (id int)
+begin
+delete from products where product_id = id;
+end //
+DELIMITER ;
+
+call sp_delete_products(8);
