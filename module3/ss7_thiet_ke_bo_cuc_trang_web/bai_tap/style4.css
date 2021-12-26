@@ -1,0 +1,46 @@
+.container {
+    width: 100%;
+}
+.menu {
+    height: 30px;
+    padding:0;
+    margin:0;
+    background-color: #222222;
+
+}
+.menu ul li {
+    padding: 0;
+    margin: 0;
+}
+.menu li {
+    position: relative;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding:0;
+    width:100px;
+    height: 30px;
+    display: block;
+    text-decoration:none;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+#login {
+    float: right;
+}
+.content {
+    height: 600px;
+}
+.left {
+    width: 25%;
+}
+.middle {
+    width: 50%;
+}
+.footer {
+    height: 50px;
+    text-align: center;
+    color: white;
+    background-color: #555555;
+}
