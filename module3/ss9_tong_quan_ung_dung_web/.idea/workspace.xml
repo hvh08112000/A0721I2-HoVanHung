@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="86a47aa6-08bc-4bb8-a37b-0e687265758b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../module2/out/production/module2/case_study/commons/ValidateServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/out/production/module2/case_study/commons/ValidateServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/out/production/module2/case_study/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/out/production/module2/case_study/controllers/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/out/production/module2/case_study/data/Villa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/out/production/module2/case_study/data/Villa.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/out/production/module2/case_study/models/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/out/production/module2/case_study/models/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/out/production/module2/case_study/models/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/out/production/module2/case_study/models/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/out/production/module2/case_study/models/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/out/production/module2/case_study/models/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/out/production/module2/case_study/models/service/CustomerServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/out/production/module2/case_study/models/service/CustomerServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/out/production/module2/case_study/models/service/HouseServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/out/production/module2/case_study/models/service/HouseServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/out/production/module2/case_study/models/service/RoomServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/out/production/module2/case_study/models/service/RoomServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/commons/NotFoundVehicelException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/commons/NotFoundVehicelException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/controllers/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/controllers/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/data/hangSanXuat.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/data/hangSanXuat.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/data/xeMay.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/data/xeMay.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/data/xeTai.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/data/xeTai.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/models/Oto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/models/Oto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/models/PhuongTien.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/models/PhuongTien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/models/XeMay.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/models/XeMay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/models/XeTai.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/models/XeTai.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/service/OtoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/service/OtoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/service/Services.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/service/Services.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/service/XeMayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/service/XeMayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/service/XeTaiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/service/XeTaiService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/util/ReadAndWriteFileOto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/util/ReadAndWriteFileOto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/util/ReadAndWriteFileXeMay.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/util/ReadAndWriteFileXeMay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/util/ReadAndWriteFileXeTai.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them/util/ReadAndWriteFileXeTai.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them_2/BenhAn.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them_2/BenhAn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them_2/BenhAnBenhNhanThuong.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them_2/BenhAnBenhNhanThuong.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them_2/BenhAnBenhNhanVip.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them_2/BenhAnBenhNhanVip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them_2/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them_2/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them_2/service/BenhNhanThuongServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them_2/service/BenhNhanThuongServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them_2/service/BenhNhanVipServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them_2/service/BenhNhanVipServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them_2/service/Services.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/bai_tap_lam_them_2/service/Services.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/case_study/data/Villa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/case_study/data/Villa.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/case_study/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/case_study/models/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/case_study/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/case_study/models/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/case_study/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/case_study/models/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/case_study/models/service/CustomerServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/case_study/models/service/CustomerServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/case_study/util/ReadAndWriteFileCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/case_study/util/ReadAndWriteFileCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/final_exam_module/DienThoai.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/final_exam_module/DienThoai.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/final_exam_module/DienThoaiChinhHang.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/final_exam_module/DienThoaiChinhHang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/final_exam_module/DienThoaiChinhHangServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/final_exam_module/DienThoaiChinhHangServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/final_exam_module/DienThoaiXachTay.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/final_exam_module/DienThoaiXachTay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/final_exam_module/DienThoaiXachTayServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/final_exam_module/DienThoaiXachTayServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/final_exam_module/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/final_exam_module/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/final_exam_module/NotFoundProductException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/final_exam_module/NotFoundProductException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/final_exam_module/ReadAndWriteFileMobiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/final_exam_module/ReadAndWriteFileMobiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/final_exam_module/Services.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/final_exam_module/Services.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/final_exam_module/data/DienThoaiChinhHang.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/final_exam_module/data/DienThoaiChinhHang.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/final_exam_module/data/DienThoaiXachTay.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/final_exam_module/data/DienThoaiXachTay.csv" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="23DNFqemTg6afZrv08KB4R7jMG1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="86a47aa6-08bc-4bb8-a37b-0e687265758b" name="Default Changelist" comment="" />
+      <created>1641264597228</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641264597228</updated>
+      <workItem from="1641264600865" duration="145000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="162" key="FileChooserDialogImpl" timestamp="1641264742530">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="162" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1641264742530" />
+    <state x="209" y="18" key="new project wizard" timestamp="1641264744814">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="209" y="18" key="new project wizard/0.0.1536.816@0.0.1536.816" timestamp="1641264744814" />
+  </component>
+</project>
