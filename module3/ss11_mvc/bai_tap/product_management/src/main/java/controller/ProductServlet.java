@@ -17,9 +17,11 @@ public class ProductServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getParameter("action");
         switch (action) {
-            case "save":
-                Product product
-                productService.save(product);
+            case "delete":
+                break;
+            case "search":
+                break;
+            default:
                 break;
         }
     }

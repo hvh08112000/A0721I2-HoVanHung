@@ -283,7 +283,7 @@
           </div>
           <div class="col-sm-6">
             <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Product</span></a>
-            <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>
+            <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Search</span></a>
           </div>
         </div>
       </div>
@@ -351,19 +351,19 @@
         <div class="modal-body">
           <div class="form-group">
             <label>Name</label>
-            <input type="text" class="form-control" required>
+            <input type="text" class="form-control" name="name">
           </div>
           <div class="form-group">
             <label>Price</label>
-            <input type="text" class="form-control" required>
+            <input type="text" class="form-control" name="price">
           </div>
           <div class="form-group">
             <label>Description</label>
-            <input type="text" class="form-control" required>
+            <textarea class="form-control" name="description"></textarea>
           </div>
           <div class="form-group">
             <label>Manufacture</label>
-            <input type="text" class="form-control" required>
+            <input type="text" class="form-control" name="Manufacture">
           </div>
         </div>
         <div class="modal-footer">
